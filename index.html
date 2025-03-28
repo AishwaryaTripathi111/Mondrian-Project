@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    padding:0;
+    }
+
+    .background {
+    height: 748px;
+    width: 748px;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px;
+    gap: 9px;
+    }
+    .red {
+    display: grid;
+    grid-area: 1/1/2/2;
+    background-color: #E72F24;
+    }
+
+    .upper {
+    display: grid;
+    grid-area: 1/2/2/5;
+    background-color: #F0F1EC;
+    }
+
+    .left {
+    display: grid;
+    grid-area: 2/1/4/2;
+    background-color: #F0F1EC;
+    }
+
+    .middle {
+    display: grid;
+    grid-area: 2/2/4/4;
+    background-color: #F0F1EC;
+    }
+
+    .blue {
+    display: grid;
+    grid-area: 2/4/3/5;
+    background-color: #004592;
+    border-bottom: 10px solid black;
+    }
+
+    .bottom-right {
+    display: grid;
+    grid-area: 3/4/5/5 ;
+    background-color:#F0F1EC;
+    }
+
+    .bottom {
+    display: grid;
+    grid-area: 4/1/5/2;
+    background-color:#F0F1EC;
+    }
+
+    .yellow {
+    display: grid;
+    grid-area: 4/2/5/-3;
+    background-color: #F9D01E;
+    }
+
+    .black {
+    display: grid;
+    grid-area: 4/-3/5/-2;
+    background-color: #232629;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="background">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+    <div class="black"></div>
+    <div class="upper"></div>
+    <div class="left"></div>
+    <div class="middle"></div>
+    <div class="bottom"></div>
+
+    <div class="bottom-right"></div>
+  </div>
+</body>
+
+</html>
